@@ -2,7 +2,7 @@ import man from "../assets/man-header-section.png"
 
 const HeaderSection = () => {
     return (
-        <div className="flex bg-gradient-to-r from-customGreenStart to-customGreenEnd text-white pt-[4rem]">
+        <div className="flex bg-gradient-to-r from-customGreenStart to-customGreenEnd text-white">
             <div className="py-20 ml-36 w-2/3">
                 <h1 className="text-5xl font-bold font-poppins">Collaborer et <br></br>Entreprendre</h1>
                 <p className="font-montserrat font-medium mt-2">Le meilleur endroit pour démarrer vos projets et vous challengez !</p>

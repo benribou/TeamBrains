@@ -7,7 +7,9 @@ const NavBar = () => {
         <nav className="bg-white p-4 fixed w-full z-10 shadow-lg">
             <div className="container mx-auto flex items-center justify-between">
                 <div className="flex items-center">
+                    <NavLink to="/">
                     <img src={logo} alt="Logo" className="h-12 w-32 mr-2"/>
+                    </NavLink>
                 </div>
 
                 <div className="flex-1 mx-4">
