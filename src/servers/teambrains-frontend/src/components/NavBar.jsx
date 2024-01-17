@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from "../assets/logo_teambrains.svg"
+import { NavLink } from 'react-router-dom';
+import logo from "../assets/logo_teambrains.svg";
 
 const NavBar = () => {
     return (
@@ -14,11 +15,11 @@ const NavBar = () => {
                 </div>
 
                 <div className="flex items-center">
-                    <a href="#" className="text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="#" className="text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium">Projets</a>
-                    <a href="#" className="text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium">Contact</a>
-                    <a href="#" className="text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium">Se connecter</a>
-                    <a href="#" className="bg-gray-800 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600">S'inscrire</a>
+                    <NavLink to="/" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Home</NavLink>
+                    <NavLink to="/projets" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Projets</NavLink>
+                    <NavLink to="/contact" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Contact</NavLink>
+                    <NavLink to="/connexion" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Se connecter</NavLink>
+                    <NavLink to="/inscription" className={({ isActive }) => isActive ? "bg-gray-600 text-white px-3 py-2 rounded-md text-sm font-medium" : "bg-gray-800 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-600"}>S'inscrire</NavLink>
                 </div>
             </div>
         </nav>
