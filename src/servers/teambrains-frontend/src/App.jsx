@@ -11,16 +11,18 @@ const App = () => {
         <Router>
             <div>
                 <NavBar />
-                <div className="min-h-screen pt-[5rem]">
-                    <Routes>
-                        <Route path="/" element={
-                            <div>
-                                <HeaderSection />
-                                <HomeContent />
-                            </div>
-                        } />
-                        <Route path="/inscription" element={<SignUp />} />
-                    </Routes>
+                <div className="flex flex-col min-h-screen pt-[5rem]">
+                    <div className="flex-grow">
+                        <Routes>
+                            <Route path="/" element={
+                                <div>
+                                    <HeaderSection />
+                                    <HomeContent />
+                                </div>
+                            } />
+                            <Route path="/inscription" element={<SignUp />} />
+                        </Routes>
+                    </div>
                 </div>
                 <Footer />
             </div>

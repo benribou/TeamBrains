@@ -17,7 +17,7 @@ const NavBar = () => {
                 </div>
 
                 <div className="flex items-center">
-                    <NavLink to="/" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Home</NavLink>
+                    <NavLink to="/" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Accueil</NavLink>
                     <NavLink to="/projets" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Projets</NavLink>
                     <NavLink to="/contact" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Contact</NavLink>
                     <NavLink to="/connexion" className={({ isActive }) => isActive ? "text-green-tb px-4 py-2 rounded-md text-sm font-medium" : "text-gray-700 hover:text-green-tb px-4 py-2 rounded-md text-sm font-medium"}>Se connecter</NavLink>
