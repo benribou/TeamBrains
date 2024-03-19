@@ -5,6 +5,7 @@ import HeaderSection from './components/HeaderSection';
 import HomeContent from './components/HomeContent';
 import Footer from './components/Footer';
 import SignUp from './components/SignUp/Signup';
+import SignIn from './components/SignIn';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                                 </div>
                             } />
                             <Route path="/inscription" element={<SignUp />} />
+                            <Route path="/connexion" element={<SignIn />} />
                         </Routes>
                     </div>
                 </div>

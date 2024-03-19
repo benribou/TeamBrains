@@ -22,20 +22,20 @@ const StepOne = ({ nextStep, handleChange, values }) => {
 
                 <div className="flex justify-center gap-4">
                     <div className="w-72 card">
-                    <label className={`block p-6 bg-white border shadow rounded cursor-pointer ${values.userType === 'étudiant' ? 'ring-4 ring-green-tb' : ''}`}>
+                    <label className={`block p-6 bg-white border shadow rounded cursor-pointer ${values.userType === 'student' ? 'ring-4 ring-green-tb' : ''}`}>
                             <img src={student} alt="Étudiant" className="h-56 w-56"/>
                             <h4 className="text-lg font-bold mt-2">Étudiant</h4>
                             <p className="text-sm">Challengez vous et acquérez de l'expérience en travaillant en équipe sur des projets concrets et réels.</p>
-                            <input type="radio" name="userType" value="étudiant" onChange={handleChange('userType')} checked={values.userType === 'étudiant'} className="hidden" />
+                            <input type="radio" name="userType" value="student" onChange={handleChange('userType')} checked={values.userType === 'student'} className="hidden" />
                         </label>
                     </div>
                     
                     <div className="w-72 card">
-                    <label className={`block p-6 bg-white border shadow rounded cursor-pointer ${values.userType === 'entrepreneur' ? 'ring-4 ring-green-tb' : ''}`}>
+                    <label className={`block p-6 bg-white border shadow rounded cursor-pointer ${values.userType === 'businessman' ? 'ring-4 ring-green-tb' : ''}`}>
                             <img src={entrepreneur} alt="Entrepreneur" className="h-56 w-56"/>
                             <h4 className="text-lg font-bold mt-2">Entrepreneur</h4>
                             <p className="text-sm">Donnez vie à vos idées sans vous ruiner. Nos développeurs juniors vous aident à démarrer votre projet.</p>
-                            <input type="radio" name="userType" value="entrepreneur" onChange={handleChange('userType')} checked={values.userType === 'entrepreneur'} className="hidden" />
+                            <input type="radio" name="userType" value="businessman" onChange={handleChange('userType')} checked={values.userType === 'businessman'} className="hidden" />
                         </label>
                     </div>
                 </div>

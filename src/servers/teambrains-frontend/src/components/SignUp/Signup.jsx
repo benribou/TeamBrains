@@ -28,11 +28,21 @@ const SignUp = () => {
       };
       
 
-    const submitForm = () => {
-    console.log(formData);
+      const submitForm = () => {
+        fetch('http://localhost:5001/auth/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
-      
-
+    
 
     switch (step) {
         case 1:
